@@ -1,0 +1,58 @@
+.sidebar {
+  /* width: 20%; */
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  justify-content: start;
+  color: white;
+  width: 250px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.sidebar .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .profile img {
+  border-radius: 30%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.sidebar .profile h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.sidebar .profile p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sidebar .profile img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .sidebar .profile h3 {
+    font-size: 1em;
+  }
+
+  .sidebar .profile p {
+    font-size: 0.8em;
+  }
+}

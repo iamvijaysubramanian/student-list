@@ -1,0 +1,111 @@
+.student-list {
+  width: 80%;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.student-list .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.student-list .header input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 10px;
+  margin-left: 500px;
+}
+
+.student-list .header button {
+  padding: 15px 12px;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.student-list .header button:hover {
+  background-color: #22c55e;
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-list th,
+.student-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.student-list th {
+  background-color: #f4f4f4;
+}
+
+.student-list td {
+  background-color: white;
+}
+
+.student-list button {
+  margin: 0 5px;
+  padding: 4px 8px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.student-list button:hover {
+  background-color: #1d4ed8;
+}
+
+.student-list button:last-child {
+  background-color: #22c55e;
+}
+
+.student-list button:last-child:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .student-list {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .student-list .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .student-list .header input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .student-list .header button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .student-list table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .student-list th,
+  .student-list td {
+    display: inline-block;
+    padding: 10px;
+  }
+}
